@@ -8,11 +8,26 @@
 /* COMMON */
 html {
     font-size: 62,5%;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
-#text-green {
-    color: green;
+/* colori containers */
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+/* /colori containers */
+
+
+ul {
+    list-style: none;
 }
 
 div.container {
@@ -25,6 +40,7 @@ img {
     width: 100%; 
 }
 
+/* blocchi con img e text */
 .content {
     position: absolute;
     top: 50%; 
@@ -41,16 +57,32 @@ div.content-bottom {
     font-weight: 800;
 }
 
-/* COLORI DEI CONTAINER */
-#red {
-    background-color: red;
+#text-green {
+    color: green;
 }
 
-#green {
-    background-color: green;
+/* MENù NAVIGAZIONE */
+body > nav {
+    position: fixed;
+    top: 1.5em;
+    right: 1em;
+    z-index: 100;
+    scroll-behavior: smooth;
 }
 
-#yellow {
-    background-color: yellow;
+ul#list > li {
+    display: inline-block;
+    color: black;
+    margin-left: 1.5em;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 50px;
+}
