@@ -9,7 +9,29 @@
 div.container {
     width: 100%;
     height: 100vh;
+    position: relative
 }
+
+img {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+figure.content-top {
+    height: 25vh;
+}
+
+figure.content-top > img {
+    height: 100%;
+    width: auto;
+}
+
 
 /* COLORI DEI CONTAINER */
 #red {
@@ -23,3 +45,4 @@ div.container {
 #yellow {
     background-color: yellow;
 }
+
